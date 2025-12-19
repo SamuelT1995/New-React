@@ -1,7 +1,12 @@
-import React from "react";
+import Pizza from "./Pizza";
 
 const App = () => {
-  return <div>App</div>;
+  return (
+    <div>
+      <h1>Hello React</h1>
+      <Pizza />
+    </div>
+  );
 };
 
 export default App;
