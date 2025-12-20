@@ -1,10 +1,15 @@
+import Footer from "./Footer";
+import Header from "./Header";
+import Menu from "./Menu";
+import "./index.css";
 import Pizza from "./Pizza";
 
 const App = () => {
   return (
-    <div>
-      <h1>Hello React</h1>
-      <Pizza />
+    <div className="container">
+      <Header />
+      <Menu />
+      <Footer />
     </div>
   );
 };

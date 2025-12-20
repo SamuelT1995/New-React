@@ -43,12 +43,17 @@ const pizzaData = [
     soldOut: false,
   },
 ];
-const Pizza = () => {
+const Pizza = (props) => {
   return (
-    <div>
-      <h2>Pizza Spinaci</h2>
-      <p>Tomato, mozarella, spinach, and ricotta cheese", price: 12</p>
-      <img src="pizzas/spinaci.jpg" alt="" />
+    <div className="pizza">
+      <img src={props.photoName} alt={props.name} />
+      <div>
+        <h3>{props.name}</h3>
+        <p>
+          {props.ingredients}, price: {props.price}
+        </p>
+        <span>{props.price}</span>
+      </div>
     </div>
   );
 };
