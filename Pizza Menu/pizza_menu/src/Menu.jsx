@@ -18,6 +18,12 @@ const Menu = () => {
         price={20}
         photoName="pizzas/funghi.jpg"
       />
+      <Pizza
+        name="Pizza Salamino"
+        ingredients="Tomato, mozarella, spinach, and ricotta cheese"
+        price={20}
+        photoName="pizzas/salamino.jpg"
+      />
     </main>
   );
 };
