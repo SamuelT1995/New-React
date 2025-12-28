@@ -8,11 +8,13 @@ const Footer = () => {
 
   return (
     <div>
-      {isOpen && (
+      {isOpen ? (
         <div className="order">
           <p>we're open until {closeHour}:00. Come visit us or order online</p>
           <button className="btn">Order</button>
         </div>
+      ) : (
+        <p>Sorry we're closed. We'll open at {openHour}</p>
       )}
     </div>
   );
