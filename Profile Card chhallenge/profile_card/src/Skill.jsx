@@ -4,7 +4,7 @@ const Skill = ({ name, color }) => {
   return (
     <div>
       <span className="skill" style={{ backgroundColor: color }}>
-        {name}
+        {name == "React" ? "React ⭐" : name}
       </span>
     </div>
   );
