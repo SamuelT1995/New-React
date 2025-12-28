@@ -8,7 +8,12 @@ const App = () => {
   return (
     <div>
       <div>
-        <input type="range" min="0" max="10" />
+        <input
+          type="range"
+          min="0"
+          max="10"
+          onChange={(e) => setStep(Number(e.target.value))}
+        />
         <button onClick={() => setStep((s) => s + 1)}>+</button>
         <span>Steps: {step}</span>
         <button onClick={() => setStep((s) => s - 1)}>- </button>
