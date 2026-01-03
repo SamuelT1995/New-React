@@ -33,6 +33,7 @@ const App = () => {
         </span>
         <span>{date.toDateString()}</span>
       </p>
+      <button onClick={() => setStep(0)}>Reset</button>
     </div>
   );
 };
