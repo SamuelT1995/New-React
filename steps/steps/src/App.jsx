@@ -51,4 +51,8 @@ const App = () => {
   );
 };
 
+const Button = () => {
+  return <div></div>;
+};
+
 export default App;
